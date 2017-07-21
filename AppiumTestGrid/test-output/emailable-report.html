@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Default suite</th></tr><tr><td><a href="#t0">test2</a></td><td class="num">0</td><td class="num attn">4</td><td class="num">0</td><td class="num">110</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">test1</a></td><td class="num">2</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">63,676</td><td></td><td></td></tr><tr><th>Total</th><th class="num">2</th><th class="num attn">5</th><th class="num attn">1</th><th class="num">63,786</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">test2 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="2">com.netease.test.TestCase2</td><td><a href="#m0">setUp</a></td><td rowspan="1">1500453684193</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m1">tearDown</a></td><td rowspan="1">1500453684294</td><td rowspan="1">0</td></tr><tr><th colspan="4">test2 &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.netease.test.TestCase2</td><td><a href="#m2">deletePhoto</a></td><td rowspan="1">1500453684293</td><td rowspan="1">0</td></tr><tr><th colspan="4">test2 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">com.netease.test.TestCase2</td><td><a href="#m3">browseCloudPic</a></td><td rowspan="1">1500453684291</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">getLocalPicts</a></td><td rowspan="1">1500453684292</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">localAlbum</a></td><td rowspan="1">1500453684290</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m6">login</a></td><td rowspan="1">1500453684283</td><td rowspan="1">4</td></tr></tbody><tbody id="t1"><tr><th colspan="4">test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.netease.test.TestCase1</td><td><a href="#m7">browseLocalPic</a></td><td rowspan="1">1500453715093</td><td rowspan="1">30488</td></tr><tr><th colspan="4">test1 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.netease.test.TestCase1</td><td><a href="#m8">getCloudPicts</a></td><td rowspan="1">1500453745586</td><td rowspan="1">0</td></tr><tr><th colspan="4">test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.netease.test.TestCase1</td><td><a href="#m9">cloudalbum</a></td><td rowspan="1">1500453712106</td><td rowspan="1">2986</td></tr><tr class="passedeven"><td><a href="#m10">login</a></td><td rowspan="1">1500453694672</td><td rowspan="1">17433</td></tr></tbody></table><h2>test2</h2><h3 id="m0">com.netease.test.TestCase2#setUp</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>28a38e6f</td><td>9001</td><td>5.1</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.net.MalformedURLException: For input string: &quot;28a38e6f&quot;
+	at java.net.URL.&lt;init&gt;(URL.java:627)
+	at java.net.URL.&lt;init&gt;(URL.java:490)
+	at java.net.URL.&lt;init&gt;(URL.java:439)
+	at com.netease.test.TestCase2.setUp(TestCase2.java:47)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: &quot;28a38e6f&quot;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at java.net.URLStreamHandler.parseURL(URLStreamHandler.java:222)
+	at java.net.URL.&lt;init&gt;(URL.java:622)
+	... 23 more
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.netease.test.TestCase2#tearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.netease.test.TestCase2.tearDown(TestCase2.java:126)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.netease.test.TestCase2#deletePhoto</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.netease.test.TestCase2#browseCloudPic</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com.netease.test.TestCase2#getLocalPicts</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">com.netease.test.TestCase2#localAlbum</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">com.netease.test.TestCase2#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>kengiloveyou057888@126.com</td><td>1990@lfk</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>test1</h2><h3 id="m7">com.netease.test.TestCase1#browseLocalPic</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.name: 本地相册
+Build info: version: &apos;2.50.1&apos;, revision: &apos;d7fc91b&apos;, time: &apos;2016-01-29 19:08:26&apos;
+System info: host: &apos;k&apos;, ip: &apos;192.168.200.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=C:\Users\kk\Desktop\eclipse\AppiumTestGrid\app\Album_netease.apk, appPackage=com.netease.cloudalbum, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.netease.cloudalbum, appWaitActivity=com.netease.cloudalbum.Activity.AppEncryptActivity, databaseEnabled=false, deviceName=127.0.0.1:62001, platform=LINUX, deviceUDID=127.0.0.1:62001, appActivity=com.netease.cloudalbum.Activity.AppEncryptActivity, desired={app=C:\Users\kk\Desktop\eclipse\AppiumTestGrid\app\Album_netease.apk, appPackage=com.netease.cloudalbum, platformVersion=4.4, platformName=Android, udid=127.0.0.1:62001, deviceName=127.0.0.1:62001}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=C8817D, platformName=Android, udid=127.0.0.1:62001, deviceManufacturer=HUAWEI}]
+Session ID: 28cc7ce1-14e7-4a21-a08f-5db48d55def1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.netease.test.TestCase1.browseLocalPic(TestCase1.java:90)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.InvalidSelectorException: Locator Strategy &apos;name&apos; is not supported for this session (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.50.1&apos;, revision: &apos;d7fc91b&apos;, time: &apos;2016-01-29 19:08:26&apos;
+System info: host: &apos;k&apos;, ip: &apos;192.168.200.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=C:\Users\kk\Desktop\eclipse\AppiumTestGrid\app\Album_netease.apk, appPackage=com.netease.cloudalbum, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.netease.cloudalbum, appWaitActivity=com.netease.cloudalbum.Activity.AppEncryptActivity, databaseEnabled=false, deviceName=127.0.0.1:62001, platform=LINUX, deviceUDID=127.0.0.1:62001, appActivity=com.netease.cloudalbum.Activity.AppEncryptActivity, desired={app=C:\Users\kk\Desktop\eclipse\AppiumTestGrid\app\Album_netease.apk, appPackage=com.netease.cloudalbum, platformVersion=4.4, platformName=Android, udid=127.0.0.1:62001, deviceName=127.0.0.1:62001}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=C8817D, platformName=Android, udid=127.0.0.1:62001, deviceManufacturer=HUAWEI}]
+Session ID: 28cc7ce1-14e7-4a21-a08f-5db48d55def1
+*** Element info: {Using=name, value=本地相册}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByName(DefaultGenericMobileDriver.java:102)
+	at io.appium.java_client.AppiumDriver.findElementByName(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByName(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:911)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:909)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 21 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m8">com.netease.test.TestCase1#getCloudPicts</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m9">com.netease.test.TestCase1#cloudalbum</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m10">com.netease.test.TestCase1#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>kengiloveyou057888@126.com</td><td>1990@lfk</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

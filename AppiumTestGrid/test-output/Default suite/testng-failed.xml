@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Default suite]" parallel="tests">
+  <parameter name="port" value="9001"/>
+  <parameter name="platformVersion" value="5.1"/>
+  <parameter name="deviceName" value="28a38e6f"/>
+  <test name="test2(failed)" parallel="tests">
+    <parameter name="port" value="9001"/>
+    <parameter name="platformVersion" value="5.1"/>
+    <parameter name="deviceName" value="28a38e6f"/>
+    <classes>
+      <class name="com.netease.test.TestCase2">
+        <methods>
+          <include name="browseCloudPic"/>
+          <include name="getLocalPicts"/>
+          <include name="setUp"/>
+          <include name="login"/>
+          <include name="localAlbum"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.netease.test.TestCase2 -->
+      <class name="com.netease.test.TestCase1">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.netease.test.TestCase1 -->
+    </classes>
+  </test> <!-- test2(failed) -->
+  <test name="test1(failed)" parallel="tests">
+    <parameter name="port" value="9000"/>
+    <parameter name="platformVersion" value="4.4"/>
+    <parameter name="deviceName" value="127.0.0.1:62001"/>
+    <classes>
+      <class name="com.netease.test.TestCase2">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.netease.test.TestCase2 -->
+      <class name="com.netease.test.TestCase1">
+        <methods>
+          <include name="cloudalbum"/>
+          <include name="getCloudPicts"/>
+          <include name="browseLocalPic"/>
+          <include name="tearDown"/>
+          <include name="login"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.netease.test.TestCase1 -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

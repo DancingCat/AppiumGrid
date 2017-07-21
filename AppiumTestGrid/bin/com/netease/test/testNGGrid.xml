@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default suite" parallel="tests" thread-count="2">
+	<test name="test2">
+		<parameter name="deviceName" value="127.0.0.1:62001" />
+		<parameter name="platformVersion" value="4.4" />
+		<classes>		
+			<class name="com.netease.test.TestCase5" />	
+		</classes>
+	</test>
+	<test name="test1">
+		<parameter name="deviceName" value="28a38e6f" />
+		<parameter name="platformVersion" value="5.1" />
+		<classes>
+			<class name="com.netease.test.TestCase4" />	
+		</classes>
+	</test>
+	
+</suite> 
